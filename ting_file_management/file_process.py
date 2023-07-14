@@ -15,7 +15,7 @@ def process(path, queue_instance):
 
 def remove(queue_instance):
     if not len(queue_instance.queue):
-        return sys.stdout.write("Não há elementos\n") 
+        return sys.stdout.write("Não há elementos\n")
     dequeued = queue_instance.dequeue()
     print("Arquivo", dequeued, "removido com sucesso")
 
